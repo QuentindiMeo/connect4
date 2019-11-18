@@ -73,9 +73,8 @@ char *get_name1(data **game)
 
 char *get_names(data **game)
 {
-    if (get_name1(game) == NULL) {
+    if (get_name1(game) == NULL)
         return ("n");
-    }
     if (get_name2(game) == NULL)
         return ("n");
     return ("-");

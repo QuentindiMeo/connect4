@@ -24,7 +24,7 @@ typedef enum {
     HEIGHT_BOARD = 6 + 2,
     LENGTH_BOARD = 7 + 2,
     EMP = '.',
-} default_tictactoe_t;
+} default_connect4_t;
 
 typedef enum {
     DRAW = 0,
@@ -34,7 +34,7 @@ typedef enum {
     W_PLAYER1 = 1,
     W_PLAYER2 = 2,
     END_OF_FILE2 = -2,
-} return_values_tictactoe_t;
+} return_values_connect4_t;
 
 int err_out_of_range(int id);
 char *err_invalid_arg(void);
