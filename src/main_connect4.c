@@ -55,7 +55,7 @@ static int print_winner(int id, data *game)
     return (FAILURE);
 }
 
-static int main_tictactoe(int ac, char **av, data *game)
+static int main_connect4(int ac, char **av, data *game)
 {
     int ret_v;
     int winner;
@@ -84,7 +84,7 @@ int main(int ac, char **av)
         (my_str_isequal(av[1], "-h") || my_str_isequal(av[1], "--help")))
         return (help());
     game = mallocator();
-    ret_v = main_tictactoe(ac, av, game);
+    ret_v = main_connect4(ac, av, game);
     ret_v = print_winner(ret_v, game);
     if (ret_v != END_OF_FILE)
         freer(game);
