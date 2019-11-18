@@ -23,6 +23,6 @@ int check_played_y(data *game)
     for (int x = 1; x < HEIGHT_BOARD - 1; x++)
         if (game->board[x][game->played_y] == EMP)
             return (SUCCESS);
-    my_putstr("Error: this row is already full\n");
+    my_putstr("Error: this column is already full\n");
     return (FAILURE);
 }

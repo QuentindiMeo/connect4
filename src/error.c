@@ -11,9 +11,9 @@
 
 int err_out_of_range(int id)
 {
-    my_putstr("Error: this row is invalid or out of range\n");
+    my_putstr("Error: this column is invalid or out of range\n");
     if (!id)
-        my_putstr("Row: ");
+        my_putstr("Column: ");
     return (YES);
 }
 

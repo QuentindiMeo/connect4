@@ -25,7 +25,7 @@ static void play(data **game, uchar whose_turn)
     (*game)->board[get_x(*game)][(*game)->played_y] =
         (whose_turn == PLAYER1 ? (*game)->p1 : (*game)->p2);
     my_putstr(whose_turn == PLAYER1 ? (*game)->name1 : (*game)->name2);
-    my_putstr(" placed a piece on row ");
+    my_putstr(" placed a piece on column ");
     my_putnbr((*game)->played_y);
     my_putstr("\n");
     place_cursor(game);
@@ -43,7 +43,7 @@ static int get_y(data **game)
     int pos[7] = {1, 2, 3, 4, 5, 6, 7};
 
     (*game)->played_y = 0;
-    my_putstr("Row: ");
+    my_putstr("Column: ");
     while (!(*game)->played_y) {
         ret_v = getline(&entry, &buff, stdin);
         if (ret_v == ERROR)
