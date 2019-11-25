@@ -17,7 +17,7 @@ static void place_cursor(data **game)
     for (; i < (*game)->played_y; i++)
         (*game)->board[0][i] = ' ';
     (*game)->board[0][i] = 'v';
-    (*game)->board[0][i + 1] = '\n';    
+    (*game)->board[0][i + 1] = '\n';
 }
 
 static void play(data **game, uchar whose_turn)
